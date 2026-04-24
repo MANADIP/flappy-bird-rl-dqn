@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PyTorch model checkpoints (large binary files)
+runs/*.pt
+
+# Logs
+runs/*.log
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
