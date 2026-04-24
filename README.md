@@ -2,7 +2,7 @@
   <img src="assets/banner.png" alt="FlappyBird RL Banner" width="100%"/>
 </p>
 
-<h1 align="center">🐦 FlappyBird RL — Deep Q-Network Agent</h1>
+<h1 align="center"> FlappyBird RL — Deep Q-Network Agent</h1>
 
 <p align="center">
   <em>Teaching an AI to play Flappy Bird using Deep Reinforcement Learning</em>
@@ -17,22 +17,22 @@
 
 ---
 
-## 📖 Overview
+##  Overview
 
 This project implements a **Deep Q-Network (DQN)** agent that learns to play Flappy Bird from scratch through reinforcement learning. The agent observes the game state (bird position, velocity, pipe gaps, etc.) and learns an optimal policy to navigate through pipes — without any hard-coded rules.
 
-### ✨ Key Features
+###  Key Features
 
-- 🧠 **Deep Q-Learning** — Neural network approximates the Q-value function for continuous state spaces
-- 🎯 **Experience Replay** — Randomized sampling from a replay buffer breaks temporal correlations and stabilizes training
-- 🔄 **Target Network** — Separate target network for computing TD targets, periodically synced to prevent oscillation
-- 📉 **Epsilon-Greedy Exploration** — Decaying ε-greedy strategy balances exploration vs. exploitation
-- 🎮 **Interactive Play Mode** — Play the game manually with keyboard controls to compare against the AI
-- ⚡ **GPU Accelerated** — Automatic CUDA / MPS detection for faster training
+-  **Deep Q-Learning** — Neural network approximates the Q-value function for continuous state spaces
+-  **Experience Replay** — Randomized sampling from a replay buffer breaks temporal correlations and stabilizes training
+-  **Target Network** — Separate target network for computing TD targets, periodically synced to prevent oscillation
+-  **Epsilon-Greedy Exploration** — Decaying ε-greedy strategy balances exploration vs. exploitation
+-  **Interactive Play Mode** — Play the game manually with keyboard controls to compare against the AI
+-  **GPU Accelerated** — Automatic CUDA / MPS detection for faster training
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -59,7 +59,7 @@ This project implements a **Deep Q-Network (DQN)** agent that learns to play Fla
 └─────────────────────────────────────────────────────┘
 ```
 
-### 🔬 State Space (12 features)
+###  State Space (12 features)
 
 The agent receives a 12-dimensional observation vector from the environment:
 
@@ -80,7 +80,7 @@ The agent receives a 12-dimensional observation vector from the environment:
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -98,7 +98,7 @@ cd flappy-bird-rl-dqn
 pip install -r requirements.txt
 ```
 
-### 🏋️ Train the Agent
+### Train the Agent
 
 ```bash
 python agent.py flappybirdv0 --train
@@ -106,7 +106,7 @@ python agent.py flappybirdv0 --train
 
 Training logs and model checkpoints are saved in the `runs/` directory.
 
-### 🎮 Watch the Trained Agent Play
+### Watch the Trained Agent Play
 
 ```bash
 python agent.py flappybirdv0
@@ -114,7 +114,7 @@ python agent.py flappybirdv0
 
 This loads the best saved model and renders the game window so you can watch the AI play.
 
-### 🕹️ Play Manually
+###  Play Manually
 
 ```bash
 python game_flappy_bird.py
@@ -124,7 +124,7 @@ Use **Spacebar** to flap and see how you compare against the AI!
 
 ---
 
-## ⚙️ Hyperparameters
+##  Hyperparameters
 
 All hyperparameters are configured in `parameters.yaml`:
 
@@ -143,7 +143,7 @@ All hyperparameters are configured in `parameters.yaml`:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 FlappyBird-RL/
@@ -162,7 +162,7 @@ FlappyBird-RL/
 
 ---
 
-## 🧪 How DQN Works
+## How DQN Works
 
 <details>
 <summary><strong>Click to expand the algorithm breakdown</strong></summary>
@@ -206,7 +206,7 @@ Using the same network to compute both the prediction and the target creates a m
 
 ---
 
-## 📊 Training Progress
+## Training Progress
 
 During training, the agent logs progress to the console:
 
@@ -222,7 +222,7 @@ Best models are automatically saved whenever a new high score is achieved.
 
 ---
 
-## 🛠️ Built With
+##  Built With
 
 - **[PyTorch](https://pytorch.org/)** — Deep learning framework
 - **[Gymnasium](https://gymnasium.farama.org/)** — Reinforcement learning environment API
@@ -231,13 +231,13 @@ Best models are automatically saved whenever a new high score is achieved.
 
 ---
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to open an issue or submit a pull request.
 
